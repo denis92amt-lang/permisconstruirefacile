@@ -4,7 +4,6 @@
   <url>
     <loc>https://www.permisconstruirefacile.fr/</loc>
     <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.plans3d2dessinateur.fr/medias/images/3d-01.jpg</image:loc>
@@ -14,5 +13,50 @@
       <image:loc>https://www.plans3d2dessinateur.fr/medias/images/vue-rue-copie-3.jpg</image:loc>
       <image:title>Construction 3 maisons jumelées — Permis de construire Île-de-France</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://www.permisconstruirefacile.fr/realisations/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.permisconstruirefacile.fr/realisations/piscine-maisons-laffitte.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.permisconstruirefacile.fr/realisations/division-deux-maisons-velizy-villacoublay.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.permisconstruirefacile.fr/realisations/extension-surelevation-cachan.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.permisconstruirefacile.fr/realisations/isolation-exterieur-derogation-bessancourt.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.permisconstruirefacile.fr/guides/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.permisconstruirefacile.fr/guides/extension-maison-declaration-prealable-ou-permis.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.permisconstruirefacile.fr/guides/piscine-autorisation-urbanisme.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.permisconstruirefacile.fr/guides/delais-instruction-permis-declaration-prealable.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>
