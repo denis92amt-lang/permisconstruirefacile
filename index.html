@@ -442,12 +442,11 @@ footer p{font-size:.78rem}
   footer{padding:2rem;flex-direction:column;text-align:center}
 }
 
-/* ── ÉTUDES DE CAS, GUIDES, COMMUNES ── */
+/* ── GUIDES, COMMUNES ── */
 a.service-card{text-decoration:none;color:inherit}
 .services.alt{background:var(--cream)}
 .services.alt .service-card{background:var(--cream)}
 .services.alt .service-card:hover{background:var(--warm)}
-.services-grid.grid-2{grid-template-columns:repeat(2,1fr)}
 .communes{padding:6rem 4rem;background:var(--cream)}
 .communes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem 3rem;max-width:1000px;margin:0 auto}
 .commune-dep h3{font-family:var(--serif);font-weight:400;font-size:1.2rem;color:var(--ink);padding-bottom:.5rem;margin-bottom:.7rem;border-bottom:1px solid var(--border)}
@@ -457,13 +456,9 @@ a.service-card{text-decoration:none;color:inherit}
 .commune-dep a:hover{text-decoration:underline}
 .communes-note{text-align:center;margin-top:2.5rem;font-size:.92rem;color:var(--ink-muted)}
 .communes-note a{color:var(--accent-dark);font-weight:600}
-.cases-banner{padding:1.1rem 4rem;background:var(--warm);border-bottom:1px solid var(--border);font-size:.93rem;color:var(--ink-soft)}
-.cases-banner a{color:var(--accent-dark);font-weight:700;text-decoration:none}
 @media(max-width:960px){
-  .services-grid.grid-2{grid-template-columns:1fr}
   .communes{padding:4rem 2rem}
   .communes-grid{grid-template-columns:1fr 1fr;gap:1.5rem 2rem}
-  .cases-banner{padding:1rem 2rem}
   .hero{grid-template-columns:minmax(0,1fr)}
   .hero-stats{flex-wrap:wrap;gap:1.25rem 2rem}
   .hero-actions{flex-wrap:wrap}
@@ -665,41 +660,6 @@ a.service-card{text-decoration:none;color:inherit}
     </div>
   </section>
 
-  <!-- Études de cas -->
-  <section class="services" id="etudes-de-cas">
-    <div class="section-header">
-      <span class="section-tag">Études de cas</span>
-      <h2>Dossiers récents <em>expliqués</em></h2>
-      <p class="section-sub">Ce qui bloquait dans le PLU, la solution retenue et les pièces préparées. Sans adresse ni nom de client.</p>
-    </div>
-    <div class="services-grid grid-2">
-      <a class="service-card" href="/realisations/piscine-maisons-laffitte.html">
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
-        <div class="service-name">Piscine enterrée à Maisons-Laffitte</div>
-        <div class="service-desc">Site inscrit du Parc et abords d'un monument historique : règles du PLU, avis de l'ABF et délais.</div>
-        <div class="service-price">Déclaration préalable · Yvelines →</div>
-      </a>
-      <a class="service-card" href="/realisations/division-deux-maisons-velizy-villacoublay.html">
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
-        <div class="service-name">Deux maisons neuves à Vélizy-Villacoublay</div>
-        <div class="service-desc">Division du terrain, emprise, hauteurs et toiture en zone UH, sous-sol en terrain argileux.</div>
-        <div class="service-price">Permis de construire · Yvelines →</div>
-      </a>
-      <a class="service-card" href="/realisations/extension-surelevation-cachan.html">
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
-        <div class="service-name">Cachan : surélever plutôt qu'agrandir au sol</div>
-        <div class="service-desc">Emprise déjà dépassée avec le nouveau PLUi : la surélévation était la seule solution conforme.</div>
-        <div class="service-price">Déclaration préalable · Val-de-Marne →</div>
-      </a>
-      <a class="service-card" href="/realisations/isolation-exterieur-derogation-bessancourt.html">
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
-        <div class="service-name">Isolation par l'extérieur à Bessancourt</div>
-        <div class="service-desc">14 cm d'isolant près de la limite voisine : la dérogation au PLU demandée à la mairie.</div>
-        <div class="service-price">Déclaration préalable · Val-d'Oise →</div>
-      </a>
-    </div>
-  </section>
-
   <!-- Tarifs aperçu -->
   <section class="tarifs-section">
     <div class="section-header">
@@ -789,9 +749,9 @@ a.service-card{text-decoration:none;color:inherit}
       <p class="section-sub">Communes où j'ai récemment préparé des permis de construire, des déclarations préalables ou des études de PLU.</p>
     </div>
     <div class="communes-grid">
-      <div class="commune-dep"><h3>Yvelines (78)</h3><ul><li>Le Vésinet</li><li><a href="/realisations/piscine-maisons-laffitte.html">Maisons-Laffitte</a></li><li>Maurecourt</li><li>Poissy</li><li><a href="/realisations/division-deux-maisons-velizy-villacoublay.html">Vélizy-Villacoublay</a></li><li>Vernouillet</li></ul></div>
-      <div class="commune-dep"><h3>Val-d'Oise (95)</h3><ul><li>Belloy-en-France</li><li><a href="/realisations/isolation-exterieur-derogation-bessancourt.html">Bessancourt</a></li><li>Courdimanche</li></ul></div>
-      <div class="commune-dep"><h3>Val-de-Marne (94)</h3><ul><li><a href="/realisations/extension-surelevation-cachan.html">Cachan</a></li><li>Créteil</li><li>Le Kremlin-Bicêtre</li><li>Villejuif</li></ul></div>
+      <div class="commune-dep"><h3>Yvelines (78)</h3><ul><li>Le Vésinet</li><li>Maisons-Laffitte</li><li>Maurecourt</li><li>Poissy</li><li>Vélizy-Villacoublay</li><li>Vernouillet</li></ul></div>
+      <div class="commune-dep"><h3>Val-d'Oise (95)</h3><ul><li>Belloy-en-France</li><li>Bessancourt</li><li>Courdimanche</li></ul></div>
+      <div class="commune-dep"><h3>Val-de-Marne (94)</h3><ul><li>Cachan</li><li>Créteil</li><li>Le Kremlin-Bicêtre</li><li>Villejuif</li></ul></div>
       <div class="commune-dep"><h3>Hauts-de-Seine (92)</h3><ul><li>Clichy</li><li>Issy-les-Moulineaux</li></ul></div>
       <div class="commune-dep"><h3>Seine-Saint-Denis (93)</h3><ul><li>Livry-Gargan</li><li>Saint-Ouen-sur-Seine</li><li>Villemomble</li></ul></div>
       <div class="commune-dep"><h3>Paris et Essonne</h3><ul><li>Paris</li><li>Les Ulis (91)</li></ul></div>
@@ -805,7 +765,6 @@ a.service-card{text-decoration:none;color:inherit}
     <div class="footer-links">
       <a href="tel:0663803949">06 63 80 39 49</a>
       <a href="mailto:coelho29@hotmail.fr">coelho29@hotmail.fr</a>
-      <a href="#etudes-de-cas">Études de cas</a>
       <a href="/guides/">Guides</a>
       <a href="#" onclick="showPage('contact');return false">Devis gratuit</a>
     </div>
@@ -821,7 +780,6 @@ a.service-card{text-decoration:none;color:inherit}
     <h2 style="font-family:var(--serif);font-size:clamp(2.2rem,3.5vw,3rem);letter-spacing:-.02em;margin-bottom:.65rem">Réalisations</h2>
     <p>Découvrez l'ensemble des projets réalisés : permis de construire, déclarations préalables, modélisations 3D et insertions paysagères.</p>
   </div>
-  <div class="cases-banner">Dossiers expliqués règle par règle : <a href="/realisations/piscine-maisons-laffitte.html">piscine à Maisons-Laffitte</a> · <a href="/realisations/division-deux-maisons-velizy-villacoublay.html">maisons neuves à Vélizy-Villacoublay</a> · <a href="/realisations/extension-surelevation-cachan.html">surélévation à Cachan</a> · <a href="/realisations/isolation-exterieur-derogation-bessancourt.html">isolation à Bessancourt</a></div>
   <div class="realisations-filters">
     <button class="filter-btn active" onclick="filterProj(this,'all')">Tous les projets</button>
     <button class="filter-btn" onclick="filterProj(this,'pc')">Permis de construire</button>
