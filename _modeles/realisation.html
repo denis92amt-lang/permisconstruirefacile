@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+  MODÈLE DE PAGE « RÉALISATION » — à utiliser par l'agent IA (ce dossier _modeles n'est pas publié sur le site)
+
+  1. Copier ce fichier vers /realisations/<travaux>-<commune>.html  (minuscules, tirets, sans accents)
+     Exemple : /realisations/extension-plaisir.html
+  2. Remplacer TOUS les {{...}}. Vérifier qu'il n'en reste aucun.
+  3. Ne JAMAIS publier : adresse, numéro de parcelle, nom du client, numéro de dossier, montant du devis.
+     Arrondir les surfaces de terrain (« environ 590 m² »).
+  4. Ne jamais écrire qu'un dossier est « accepté » sans l'arrêté de la mairie.
+  5. Titre <title> : « <Travaux> à <Commune> (<dép.>) : <angle> | Denis Ribeiro », 60 à 80 caractères.
+     Description : 140 à 160 caractères, avec la commune et le type d'autorisation.
+  6. Après création, mettre à jour :
+     - /realisations/index.html : ajouter une carte <a class="card"> en tête de la liste ;
+     - /sitemap.xml : ajouter un bloc <url> avec <loc> et <lastmod> ;
+     - si la commune est nouvelle : l'ajouter dans la section « Communes d'intervention » de /index.html.
+-->
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TRAVAUX}} à {{COMMUNE}} ({{DEP}}) : {{ANGLE}} | Denis Ribeiro</title>
+<meta name="description" content="{{DESCRIPTION_140_160_CARACTERES}}">
+<link rel="canonical" href="https://www.permisconstruirefacile.fr/realisations/{{SLUG}}.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Denis Ribeiro">
+<meta name="theme-color" content="#c8703a">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://www.permisconstruirefacile.fr/realisations/{{SLUG}}.html">
+<meta property="og:title" content="{{TRAVAUX}} à {{COMMUNE}} ({{DEP}}) : {{ANGLE}} | Denis Ribeiro">
+<meta property="og:description" content="{{DESCRIPTION_140_160_CARACTERES}}">
+<meta property="og:image" content="https://www.plans3d2dessinateur.fr/medias/images/3d-01.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "{{TRAVAUX}} à {{COMMUNE}} : {{ANGLE}}",
+   "description": "{{DESCRIPTION_140_160_CARACTERES}}",
+   "inLanguage": "fr-FR",
+   "datePublished": "{{DATE_AAAA-MM-JJ}}",
+   "dateModified": "{{DATE_AAAA-MM-JJ}}",
+   "mainEntityOfPage": "https://www.permisconstruirefacile.fr/realisations/{{SLUG}}.html",
+   "image": "https://www.plans3d2dessinateur.fr/medias/images/3d-01.jpg",
+   "author": {
+    "@type": "Person",
+    "name": "Denis Ribeiro",
+    "jobTitle": "Dessinateur en bâtiment"
+   },
+   "publisher": {
+    "@type": "LocalBusiness",
+    "name": "Denis Ribeiro — Dessinateur en Bâtiment 3D/2D",
+    "url": "https://www.permisconstruirefacile.fr/",
+    "telephone": "+33663803949"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Accueil",
+     "item": "https://www.permisconstruirefacile.fr/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Réalisations",
+     "item": "https://www.permisconstruirefacile.fr/realisations/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "{{TRAVAUX}} à {{COMMUNE}}",
+     "item": "https://www.permisconstruirefacile.fr/realisations/{{SLUG}}.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- STATISTIQUES : coller ici le snippet Cloudflare Web Analytics -->
+</head>
+<body>
+<nav class="topnav">
+  <a class="nav-brand" href="/">Denis Ribeiro <span>·</span> Dessinateur</a>
+  <button class="hamburger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/realisations/" class="active">Réalisations</a></li>
+    <li><a href="/guides/">Guides</a></li>
+    <li><a href="/#tarifs">Tarifs</a></li>
+    <li><a href="/#contact" class="nav-cta">Devis gratuit</a></li>
+  </ul>
+</nav>
+
+<header class="page-head">
+  <div class="page-head-inner">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> › <a href="/realisations/">Réalisations</a> › {{TRAVAUX}} à {{COMMUNE}}</nav>
+    <span class="tag">Réalisation · {{TYPE_AUTORISATION}} · {{DEPARTEMENT}} ({{DEP}})</span>
+    <h1>{{TRAVAUX}} à <em>{{COMMUNE}}</em> : {{ANGLE}}</h1>
+    <p class="lead">{{CHAPO_2_PHRASES : le besoin du client et la question réglementaire}}</p>
+    <p class="meta">{{TYPE_ETUDE}} réalisée en {{MOIS_ANNEE}} · {{COMMUNE}} ({{CODE_POSTAL}})</p>
+    <dl class="facts"><div><dt>Commune</dt><dd>{{COMMUNE}} ({{DEP}})</dd></div><div><dt>Zone du PLU</dt><dd>{{ZONE}}</dd></div><div><dt>Projet</dt><dd>{{PROJET_COURT}}</dd></div><div><dt>Autorisation</dt><dd>{{TYPE_AUTORISATION}}</dd></div><div><dt>Point clé</dt><dd>{{POINT_CLE}}</dd></div></dl>
+  </div>
+</header>
+
+<main class="content">
+
+  <h2>Le projet</h2>
+  <p>{{DESCRIPTION_DU_PROJET}}</p>
+
+  <!-- Optionnel : image (plan, insertion, rendu 3D). Ne pas montrer d'adresse lisible sur l'image. -->
+  <!-- <img src="{{URL_IMAGE}}" alt="{{TEXTE_ALTERNATIF}}" loading="lazy"> -->
+
+  <h2>Ce que dit le PLU</h2>
+  <div class="table-wrap"><table><thead><tr><th>Règle</th><th>Exigence du PLU</th><th>Application au projet</th></tr></thead><tbody>
+    <tr><td>{{REGLE_1}}</td><td>{{EXIGENCE_1}}</td><td>{{APPLICATION_1}} — <span class="ok">Conforme</span></td></tr>
+    <tr><td>{{REGLE_2}}</td><td>{{EXIGENCE_2}}</td><td>{{APPLICATION_2}}</td></tr>
+  </tbody></table></div>
+  <p class="small">Source : {{DOCUMENT_URBANISME_ET_DATE}}</p>
+
+  <h2>{{TITRE_DIFFICULTE : ce qui bloquait ou demandait de l'attention}}</h2>
+  <p>{{EXPLICATION_ET_SOLUTION}}</p>
+
+  <h2>Les pièces du dossier</h2>
+  <ul>
+    <li>{{PIECE_1}}</li>
+    <li>{{PIECE_2}}</li>
+  </ul>
+
+  <div class="note"><strong>À retenir pour un projet à {{COMMUNE}} :</strong> {{CONSEIL_CONCRET}}</div>
+
+
+  <aside class="cta">
+    <h2>Un projet à {{COMMUNE}} ou dans les environs ?</h2>
+    <p>J'analyse le PLU de votre terrain et je prépare le dossier complet : plans, notice, Cerfa. Devis gratuit sous 24 h.</p>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="/#contact">Demander un devis</a>
+      <a class="btn btn-ghost" href="tel:0663803949">06 63 80 39 49</a>
+    </div>
+  </aside>
+  <section class="related"><h2>À lire aussi</h2><div class="cards"><a class="card" href="/guides/{{SLUG_GUIDE}}.html"><span class="card-tag">Guide</span><span class="card-title">{{TITRE_GUIDE_LIE}}</span><span class="card-more">Lire →</span></a></div></section>
+</main>
+
+<footer>
+  <div class="footer-brand">Denis Ribeiro <span>·</span> Dessinateur en Bâtiment</div>
+  <p>© 2026 · SIRET 802 252 353 00023</p>
+  <div class="footer-links">
+    <a href="tel:0663803949">06 63 80 39 49</a>
+    <a href="mailto:coelho29@hotmail.fr">coelho29@hotmail.fr</a>
+    <a href="/realisations/">Réalisations</a>
+    <a href="/guides/">Guides</a>
+    <a href="/#contact">Devis gratuit</a>
+  </div>
+</footer>
+</body>
+</html>
